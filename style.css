@@ -5,19 +5,20 @@
     font-family: Arial, Helvetica, sans-serif; 
 }
 .logo {
-    width: 140px;
+    width: 120px;
     position: fixed;
     top: 0;
 }
 header img {
     background-color: #fff;
+   
     padding-top: 0;
     padding-bottom: 0;
-    opacity: 70%;
+ 
 }
 h5{
     position: relative;
-    font-size: 5em;
+    font-size: 2em;
     letter-spacing: 8px;
     color: rgb(97, 205, 229);
     text-transform: uppercase;
@@ -42,14 +43,14 @@ h5{
 .banner-text{
     text-align: center;
     color: #fff;
-    padding-top: 300px;
+    padding-top: 250px;
 }
 .banner-text h1{
-    font-size: 130px;
+    font-size: 80px;
     font-family: "Crimson Text", "Times New Roman", Times, serif;
 }
 .banner-text p{
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
 }
 .banner-btn{
@@ -136,9 +137,9 @@ nav ul li a{
 
 /*--our-services--*/
 
-.simple{
+#services{
     width: 100%;
-    height: 220vh;
+    height: 100vh;
     padding: 0 8%;
 }
 .simple h1{
@@ -189,6 +190,32 @@ nav ul li a{
 }
 .service:hover i{
     color: #fff;
+}
+
+/*--space*/
+
+.title-message {
+    width: 100%;
+    height: 160vh;
+    padding: 0 10%;
+}
+.title-message h1{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+}
+.title-message H1::after{
+    content: '';
+    background: #6871ed;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .service-box{
     width: 70%;
@@ -261,7 +288,7 @@ hr{
         bottom: 25% !important;
     }
 }
- /* service; */
+
 
  /*--Our-purpose--*/
 
@@ -271,53 +298,19 @@ hr{
         background: linear-gradient(rgba(0,0,0,0.5), rgb(86, 86, 223)),url(images/lp\ white.jpg);
         background-size: cover;
         background-position: center;
+        width: 100%;
         height: 100vh;
-    width: 100%;
-    padding: 70px 0;
-   
+        padding: 0 20%;
+    
 }
-.coming-soon{
-   
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.coming-soon, h6{
-    font-size: 3rem;
-    font-weight: bold;
+.title-word{
     text-align: center;
-    color: rgb(195, 45, 34);
-    font-family: "Crimson Text", "Times New Roman", Times, serif;
-    line-height: 5em;
-    -webkit-box-reflect: below 1px linear-gradient(transparent ,#0004);
-    outline: none;
-    animation: animate 3s linear infinite;
-    
+    padding-top: 70px;
 }
-
-.countdown{
-    display: flex;
-    justify-content: space-around;
-  
-    
-}
-.day,
-.hour,
-.minute,
-.second {
-    font-size: 4rem;
-
-    
-}
-
-.title-text{
-    text-align: center;
-    padding-bottom: 70px;
-}
-.title-text h1{
-    font-size: 50px;
+.title-word h1{
+    font-size: 30px;
     color: #fff;
+
  }
 .purposes{
 width: 70%;
@@ -331,7 +324,7 @@ color: #fff;
     font-weight: lighter;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 button {
@@ -354,6 +347,42 @@ button {
  font-family: Arial,sans-serif;
  color: #000000;
  }
+.coming-soon {
+   
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 10%;
+}
+
+.coming-soon h6{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(195, 45, 34);
+    font-family: "Crimson Text", "Times New Roman", Times, serif;
+    line-height: 30px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent ,#0004);
+    outline: none;
+    animation: animate 3s linear infinite;
+}
+
+.countdown{
+    display: flex;
+   grid-gap: 10%;
+  justify-content: center;
+
+  
+}
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 50px;
+    text-align: center;
+}
+
+
  
   @media screen and (max-width: 770px){
     .title-text h1{
@@ -369,9 +398,15 @@ button {
     padding: 100px 0 20px;
     background: #efefef;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 .title-text{
     text-align: center;
+}
+.title-text h1{
+    color: #000;
+    font-size: 50px;
 }
 .footer-row{
     width: 80%;
