@@ -5,15 +5,17 @@
     font-family: Arial, Helvetica, sans-serif; 
 }
 .logo {
-    width: 120px;
+    width: 100px;
     position: fixed;
     top: 0;
 }
 header img {
     background-color: #fff;
-   
+    border-radius: 20%;
+    
     padding-top: 0;
     padding-bottom: 0;
+    opacity: 70%;
  
 }
 h5{
