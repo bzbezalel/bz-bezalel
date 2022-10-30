@@ -164,9 +164,9 @@ nav ul li a{
     transform: translateX(-50%);
 }
 .row{
-    display: 0;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 .service{
     text-align: center;
